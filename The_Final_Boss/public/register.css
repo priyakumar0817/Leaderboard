@@ -1,0 +1,79 @@
+/* CSS page for register page*/
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+}
+/* form inverted style from other pages*/
+form {
+
+    width: 300px;
+    background: linear-gradient(to bottom, #dec0a8, #faf0e6);
+    box-shadow: 1px 1px 30px #cd9f79;
+    border-top: 2px solid #ceaf98;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 40px #b18b6c;
+}
+
+
+.container {
+    line-height: 0.3;
+    border-radius: 5px;
+    text-align: center;
+    padding: 14px;
+}
+/* syling for all the inputs */
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'] {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 100%;
+    margin: 10px 10px 7px 10px;
+    border-bottom: 2px solid #dfbfa6;
+    box-shadow: 1px 1px 10px #caa88c;
+    border-top: 2px solid #ceb5a1;
+
+
+}
+
+::placeholder {
+    color: rgb(104, 104, 104);
+}
+
+input[type='submit'] {
+    background-image: linear-gradient(to bottom right, #7d4715, #c6a58a);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 90%;
+    box-shadow: 1px 1px 4px rgb(103, 71, 92);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+a {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}

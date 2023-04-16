@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<!-- Mvp Updates html page -->
+
+<head>
+  <meta charset='utf-8'>
+  <title>MVP</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- fonts and styling -->
+  <link rel='stylesheet' type='text/css' href='public/mvp_update.css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- from w3schools nav bar -->
+  <div class="w3-bar">
+    <a href="" class="w3-bar-item w3-button" id='mvp'>MVP UPDATES</a>
+    <a href="leaderboard" class="w3-bar-item w3-button">LEADERBOARD</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">UPDATE SETTINGS</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">UPDATE USERNAME</a>
+        <a href="#" class="w3-bar-item w3-button">UPDATE PASSWORD</a>
+        <a href="#" class="w3-bar-item w3-button">UPDATE EMAIL</a>
+      </div>
+    </div>
+    <a href="login" id='logout' class="w3-bar-item w3-button">LOGOUT</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">VIEW WEEKS</button>
+      <!-- nav bar for each week -->
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a onclick='turnoffW1()' class="w3-bar-item w3-button">WEEK 1</a>
+        <a onclick='turnoffW2()' class="w3-bar-item w3-button">WEEK 2</a>
+        <a onclick='turnoffW3()' class="w3-bar-item w3-button">WEEK 3</a>
+        <a onclick='turnonAll()' class="w3-bar-item w3-button">VIEW ALL</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class='header'>
+    <h1>MVP UPDATES</h1>
+  </div>
+  <!-- week 1 update -->
+  <div class='w1'>
+    <div class="row">
+      <h2>WEEK 1</h2>
+      <h5>EARLY DEVELOPMENT:</h5>
+      <p>We met to create a beginning outline for the Final Report that helps us get an idea of how we will structure
+        our
+        final project.
+        We put this outline in a Google Doc, listing all the major concepts we've learned throughout the course.</p>
+      <p> This includes:</p>
+      <ul>
+        <li>Problem to solve and solution we provide (Job to be done)</li>
+        <li>Product Description</li>
+        <li>Customer Discovery</li>
+        <li>Target Market, Market Size</li>
+        <li>Customer Personas</li>
+        <li>Competition</li>
+        <li>Validity Tests:</li>
+        <li>RIBS, SIMPLE, RAT, SWOT, Business Madlib</li>
+        <li>Revenue Model</li>
+      </ul>
+      <p> Our outline simply highlights these key points for our report, and gives us a clear direction in the coming
+        weeks. </p>
+    </div>
+  </div>
+  <!-- week 2 update -->
+  <div class='w2'>
+    <div class="row">
+      <h2>WEEK 2</h2>
+      <h5>LAB 8:</h5>
+      <p>For Monday week 8 lab, we continued to ideate our final report.</p>
+      <p> The activities included:</p>
+      <ul>
+        <li>Created a customer journey mapping and visual storyline</li>
+        <li>Planned prospective customer interviews</li>
+        <li>Identified pain points that customers have with our wearable GPS tracker for kids</li>
+        <li>Created a mock draft of blog post UI design via system design and information architecture</li>
+        <li>Code practice with authentication/sessions</li>
+      </ul>
+      <p> So far this week it was challenging to do the bulk of the report, but we managed to complete a good chunk
+        after hours and hours of work. </p>
+
+      <h5>GROUP MEETING:</h5>
+      <p>For our weekly meeting, we discussed roles and how we plan to complete the report.</p>
+      <p> The rough draft now has the following:</p>
+      <ul>
+        <li>Articulating the product with product vision summary</li>
+        <li>Interview transcripts and customer personas</li>
+        <li>Market identification</li>
+        <li>Competitors and SWOT analysis</li>
+        <li>Job stories</li>
+        <li>MVP Hypothesis</li>
+        <li>Lean-Canvas Sheet</li>
+      </ul>
+      <p>Slowly bringing everything together and going over where we're at with the TAs tomorrow at lab. Need to film
+        video soon.</p>
+    </div>
+  </div>
+  <!-- week 3 update -->
+  <div class='w3'>
+    <div class="row">
+      <h2>WEEK 3</h2>
+      <h5>FINAL CHECK IN</h5>
+      <p>For our final team check in, we met to finish formatting and finalizing our MVP report.</p>
+      <p> Final tasks included:</p>
+      <ul>
+        <li>Finish the final MVP report</li>
+        <li>Film the demo part of the video</li>
+        <li>Make slides for video portion</li>
+        <li>Edit the demo of the video (Took a long time, tedious for us)</li>
+        <li>Edit the presentation part of the video</li>
+      </ul>
+      <p>The report and video is 99% done! All thats left to do is final check ins and turning it in!</p>
+    </div>
+  </div>
+
+  <!-- javascript functions for week nav bar toggle view -->
+  <script>
+    /*
+    Turn off week 2 and 3 but turn week 1 on 
+    */
+    function turnoffW1() {
+      const w1 = document.querySelector('.w1');
+      w1.style.display = 'block';
+      const w2 = document.querySelector('.w2');
+      w2.style.display = 'none';
+      const w3 = document.querySelector('.w3');
+      w3.style.display = 'none';
+    }
+    /*
+    Turn off week 1 and 3 but turn week 2 on 
+    */
+    function turnoffW2() {
+      const w2 = document.querySelector('.w2');
+      w2.style.display = 'block';
+      const w1 = document.querySelector('.w1');
+      w1.style.display = 'none';
+      const w3 = document.querySelector('.w3');
+      w3.style.display = 'none';
+    }
+    /*
+    Turn off week 1 and 2 but turn week 3 on 
+    */
+    function turnoffW3() {
+      const w3 = document.querySelector('.w3');
+      w3.style.display = 'block';
+      const w1 = document.querySelector('.w1');
+      w1.style.display = 'none';
+      const w2 = document.querySelector('.w2');
+      w2.style.display = 'none';
+    }
+    /*
+Turn on all weeks
+*/
+    function turnonAll() {
+      const w1 = document.querySelector('.w1');
+      w1.style.display = 'block';
+      const w2 = document.querySelector('.w2');
+      w2.style.display = 'block';
+      const w3 = document.querySelector('.w3');
+      w3.style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>

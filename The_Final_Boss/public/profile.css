@@ -1,0 +1,17 @@
+/* CSS page for profile page */
+body {
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom, #dec0a8, #efeeed);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+/* from w3schools */
+.w3-bar {
+    background-color: #d3b7a0;
+}

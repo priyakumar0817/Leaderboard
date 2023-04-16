@@ -1,0 +1,64 @@
+/* CSS page for MVP updates */
+* {
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    height: 100%;
+    font-weight: 100;
+    background: linear-gradient(to bottom, #dec0a8, #efeeed);
+}
+
+
+.header > h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    font-weight: 100;
+
+}
+/* each mvp update styling */
+.row {
+
+    background: linear-gradient(to bottom, rgba(249, 247, 249, 0.772), rgba(254, 248, 252, 0.676));
+    box-shadow: 1px 1px 30px #cd9f79;
+    border-top: 2px solid #d7b79e;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    max-width: 95%;
+    transition: transform 0.8s ease-in-out, box-shadow 0.8s ease;
+}
+
+.row:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 30px #927054;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        width: 100%;
+
+    }
+}
+
+.row>h2,
+.row>h5 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.row>h5 {
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-weight: 600;
+
+}

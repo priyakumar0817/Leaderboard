@@ -1,0 +1,63 @@
+/* CSS page for leaderboard */
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    font-weight: 100 !important;
+    
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    background: linear-gradient(to bottom, #dec0a8 ,#efeeed);
+
+}
+h1 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-align: center;
+    font-weight:100 !important;
+  
+    
+}
+.idea-container {
+    
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    justify-content: center;
+
+}
+
+.group {
+    background: linear-gradient(to bottom, #e1d7cf ,#efeeed);
+    box-shadow: 1px 1px 30px #cd9f79;
+    text-align: center;
+    margin: 2%;
+    padding: 2% 4% 2% 4%;
+    border-radius: 10px;    
+    min-height: 100px;
+    border-top: 2px solid #d7b79e;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+#idea {
+    font-size: 220%;
+    
+}
+p {
+   
+    font-size: 150%;
+}
+.group:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 30px #927054;
+}
+/* change view of container */
+@media screen and (max-width: 768px) {
+
+    .idea-container{
+        grid-template-columns: 500px 500px;
+    }
+
+
+}
+a, button {
+    font-size:120% !important;
+}
