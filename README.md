@@ -40,11 +40,6 @@ JavaScript Files:
 Images:
 - priya2.jpg (for index.html homepage)
 
-This final challenge is NOT fully completed. These are all the components that are not included in my website:
-
-- page access restrictions (visitors can see all pages)
-- documentation diagrams (all 3)
-- leaderboard commenting system (none included)
 
 **REST routes**:
 - GET: /, register, login, profile, leaderboard
